@@ -4,16 +4,17 @@ import React from 'react';
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
-  console.log(props.removeFeature)
+  console.log(props.car.features)
   return (
     <div className="content">
       <h6>Added features:</h6>
       {props.car.features.length ? (
         <ol type="1">
-          {props.additionalFeatures.map(item => (
+          {props.car.features.map(item => (
             <AddedFeature 
               key={item.id} 
               feature={item.name}
+              price={item.price}
               removeFeature={props.removeFeature} 
             />
           ))}
