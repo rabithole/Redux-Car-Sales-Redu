@@ -44,7 +44,7 @@ export function reducer(state = initialState, action) { // Action === dispatch
               features: state.car.features.filter(item => 
                 item.id !== action.payload.id)
               },
-            additionalFeatures: [...state.additionalFeatures, action.payload]
+            additionalFeatures: state.additionalFeatures
           };
          
     default:
