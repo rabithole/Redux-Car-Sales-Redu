@@ -42,7 +42,9 @@ const App = (props) => {
           additionalFeatures={props.additionalFeatures} 
           buyItem={buyItem}
         />
-        <Total car={props.car} additionalPrice={props.additionalPrice} />
+        <Total 
+          car={props.car} 
+        />
       </div>
     </div>
   );
