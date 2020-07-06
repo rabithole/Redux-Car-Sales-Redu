@@ -13,7 +13,7 @@ import actions from './actions/actions';
 const App = (props) => {
   const removeFeature = item => {
     // dispatch an action here to remove an item
-    console.log('REMOVE FEATURE!!!!', item)
+    // console.log('REMOVE FEATURE!!!!', item)
     props.removeFeature(item)
   };
 
@@ -22,7 +22,7 @@ const App = (props) => {
 
   const buyItem = item => {
     // dipsatch an action here to add an item
-    console.log('BUY ITEM:', item)
+    // console.log('BUY ITEM:', item)
     // item.dispatch({ type: 'ADD_FEATURE', payload: item.id });
     props.buyItem(item)
   };

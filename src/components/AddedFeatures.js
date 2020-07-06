@@ -4,7 +4,7 @@ import React from 'react';
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
-  console.log(props.car.features)
+  // console.log(props.car.features)
   return (
     <div className="content">
       <h6>Added features:</h6>
@@ -13,6 +13,7 @@ const AddedFeatures = props => {
           {props.car.features.map(item => (
             <AddedFeature 
               key={item.id} 
+              id={item.id}
               feature={item.name}
               price={item.price}
               removeFeature={props.removeFeature} 
