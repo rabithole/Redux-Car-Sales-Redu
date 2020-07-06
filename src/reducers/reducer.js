@@ -35,9 +35,9 @@ export function reducer(state = initialState, action) { // Action === dispatch
       }
 
       case 'REMOVE_FEATURE':
-      console.log('REMOVE FEATURE REDUCER!!!')
-      console.log(state.car.features)
-      console.log(action.payload)
+      // console.log('REMOVE FEATURE REDUCER!!!')
+      // console.log(state.car.features)
+      // console.log(action.payload)
        return {
             // additionalPrice: state.car.features.price,
             car: {

@@ -3,12 +3,8 @@ import { connect } from 'react-redux'; // Connect is a higher order function.
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
-// import AdditionalFeature from './components/AdditionalFeature';
 import { buyItem, removeFeature } from './actions/actions';
 import Total from './components/Total';
-import actions from './actions/actions';
-
-// import { AddedFeatures, removeFeatures } from './actions/actions';
 
 const App = (props) => {
   const removeFeature = item => {
